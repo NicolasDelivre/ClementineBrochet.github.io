@@ -1,0 +1,60 @@
+.photo{
+    max-width: 1510px;
+}
+.main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: black;
+}
+.blockIntro, .blockReflexion{
+    background-color: #000000;
+}
+
+.titre {
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+    display: inline-block;  /*Encadrer le texte (au lieu d'une banderole)*/
+    font-size: 30px;
+    color: #ffffff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,59,135,1) 50%,rgba(37,206,204,1) 100%);
+}
+.enteteA, .enteteB {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,59,135,1) 50%,rgba(37,206,204,1) 100%);
+}
+.enteteB{
+    margin-top: 60px;
+}
+.paragraphe, .introduction, .copyrights {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.carte-description {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.carte, .carte-image, .carte-description{
+   width: 37vw;
+}
+.carte-image{
+    display: block;
+}
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
