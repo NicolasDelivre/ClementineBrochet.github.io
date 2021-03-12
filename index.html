@@ -1,80 +1,82 @@
-<!-- created by Clementine Brochet -->
+<!-- HomePage -->
 
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
-        <title>Titre de la page</title>
+        <title>HomePage</title>
     </head>
 
-        <!-- On remplit la page dans <body> -->
         <body>
             <link rel="stylesheet" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
             <body style="background-color:#000000;"></body>
-            <img class="photo" src="AlgueTer.jpg" alt="Photo sous marine">
            
             <div class="main">
-                <!-- class titre de la page -->
-                <div class="titre">
-                    DEVOIR 1
+                <div class="titreMain">
+                    NameOfTheSite
+                </div>
+
+            <!-- Navigation -->
+            <div class="navbar">
+                <a href="#home">HOME</a>
+                <div class="dropdown">
+                  <button class="dropbutton">PORTFOLIO 
+                    <i class="liste"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Astrid Rousselin</a>
+                    <a href="#">Nicolas Delivre</a>
+                    <a href="#">Clémentine Brochet</a>
+                  </div>
                 </div> 
+                <a href="#contact">CONTACT</a>
+            </div>
 
-                <!-- Introduction -->
-                <div class="blockIntro">
-                    <div class="enteteA">
-                        Introduction personnelle
-                    </div>
-                    <div class="introduction">
-                        Passionnée d’arts visuels, je m'intéresse notamment à l'art écologique. Je n'ai aucune expérience en web. J’aimerais me familiariser avec les bases pour la création d’une page web simple et interactive. Voici deux projets qui m’inspirent autant par leur forme que par leur sujet : <i>Anthropocean</i> d’Olga Kisseleva et No-fishing.net de Makemepulse.
-                    </div>
-                    <!-- Images -->
-                    <div class="galerie">
-                        <div class="Anthropocean">
-                            <img class="carte-image" src="image-1.jpg">
-                            <div class="carte-description">
-                                <i>Anthropocean</i>, 2016, Olga Kisseleva<br />
-                            </div>
-                        </div>
-                        <div class="No-fishing">
-                            <img class="carte-image" src="image-2.jpg">
-                            <div class="carte-description">
-                                <i>No-fishing</i>, Makemepulse (pour une campagne de Sea Shepherd)<br />
-                            </div>
-                        </div>
-                    </div>
+            <!-- Introduction -->
+                <div class="introduction">
+                    Weee aaaare the chaaaaaaampioooon, my friiiiends.
+                    And we'll keep on fighting 'til the end.
+                    We aaaaaare the chaaaaaampiooons.
+                    We aaaaaare the chaaaaaampiooons.
+                    No time for losers
+                    'Cause we are the chaaaaaampioooons of the woooooooooooooorld. Weee aaaare the chaaaaaaampioooon, my friiiiends.
+                    And we'll keep on fighting 'til the end.
+                    We aaaaaare the chaaaaaampiooons.
+                    We aaaaaare the chaaaaaampiooons.
+                    No time for losers
+                    'Cause we are the chaaaaaampioooons of the woooooooooooooorld.
                 </div>
 
-                <!-- Reflexion oeuvre -->
-                <div class="blockReflexion">
-                    <div class="enteteB">
-                        Réflexion
-                    </div>
-                    <div class="paragraphe">
-                        J’aime beaucoup le travail engagé et réflexif de l’artiste Ben Grosser, qui oscille entre art web et action politique, notamment dans son œuvre Go Rando. Cette extension vient modifier le code de FaceBook pour afficher aléatoirement une « réaction » parmi les six proposées (like, triste, haha, etc.) et ainsi brouiller l’algorithme qui analyse nos comportements émotionnels selon les publications. Son œuvre nous interroge à la fois sur nos pratiques et sur celles de ce réseau social qui tend à manipuler nos contenus : bien ou mal ? A chacun de se faire son opinion. En tout cas, la première étape consiste à prendre conscience du fonctionnement algorithmique.
-                    </div>
-                    <!-- Images -->
-                    <div class="galerie">
-                        <div class="carte">
-                            <img class="carte-image" src="image-3.jpg">
-                            <div class="carte-description">
-                                Logo Go Rando
-                            </div>
-                        </div>
-                        <div class="carte">
-                            <img class="carte-image" src="image-4.jpg">
-                            <div class="carte-description">
-                                Illustration du trouble généré au près de l'algorithme de FaceBook (images issues de bengrosser.com)
-                            </div>
-                        </div>
-                    </div>
+            <!-- Presentation des membres -->
+                <div class="titreMembres">
+                    Membres
                 </div>
+                    <div class="clearfix">
+                        <div class="container">   
+                            <img id="Astrid" class="portrait" src="image-2.jpg" style="visibility:hidden" alt="Astrid Rousselin">
+                            <button type="button" class="btn" onclick="showImage()">Afficher</button>
+                                <script>
+                                    function showImage() {
+                                    document.getElementById("Astrid").style.visibility="visible";
+                                    }
+                                </script>
+                        </div>
+                            <div class="description">
+                                blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla...
+                            </div>
 
-                <div class="copyrights">
-                    © ClémentineB.
-                </div>
-
+                        <img class="portrait" src="image-2.jpg" alt="Nicolas Delivre">
+                            <div class="description">
+                                blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla...
+                            </div>
+                        <img class="portrait" src="image-2.jpg" alt="Clementine Brochet">
+                            <div class="description">
+                                blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla...
+                            </div>
+                    </div>
             </div>
         </body>
 </html>

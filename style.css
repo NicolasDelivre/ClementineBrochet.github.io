@@ -1,60 +1,125 @@
-.photo{
-    max-width: 1510px;
-}
-.main {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    background-color: black;
-}
-.blockIntro, .blockReflexion{
-    background-color: #000000;
+.main{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.titre {
+/*Caracteristiques communes*/
+.titreMain, .navbar a, .dropbutton, .introduction, .titreMembres, .description {
+    color: #f0f0f0;
     font-family: 'Quicksand', sans-serif;
-    padding: 20px;
-    display: inline-block;  /*Encadrer le texte (au lieu d'une banderole)*/
-    font-size: 30px;
-    color: #ffffff;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,59,135,1) 50%,rgba(37,206,204,1) 100%);
 }
-.enteteA, .enteteB {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,59,135,1) 50%,rgba(37,206,204,1) 100%);
-}
-.enteteB{
-    margin-top: 60px;
-}
-.paragraphe, .introduction, .copyrights {
-    font-family: 'Quicksand', sans-serif;
+.introduction, .description{
     font-size: 15px;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    text-align: justify;
 }
 
-.carte-description {
-    font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
-    margin-top: 10px;
+.titreMain {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
-.carte, .carte-image, .carte-description{
-   width: 37vw;
+
+/*NAVIGATION BAR & DROPDOWN MENU*/
+.navbar {
+    overflow: hidden;
+
+    /*centered*/
+    /*float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
 }
-.carte-image{
+.navbar a { /* "Home" & "Contact" */
+    font-size: 20px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;   /*espacement entre les elements*/
+}
+.dropdown { /* "Portfolio" */
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbutton {
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    padding: 15px;    /*espacement avec les elements*/
+}
+.navbar a:hover, .dropdown:hover .dropbutton,.dropdown-content a:hover{
+    /* Souligne texte quand souris passe dessus */
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #c0c0c0;
+    text-decoration-thickness: 1.2px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+.dropdown-content a {
+    float: none;
+    color: #f0f0f0;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.dropdown:hover .dropdown-content {display: block;}
+
+/*INTRODUCTION*/
+.introduction{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*A PROPOS*/
+.titreMembres {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.clearfix {
+    overflow: auto;
     display: block;
 }
-.galerie{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.portrait {
+    float: left;
+    width: 37vw;
 }
+.description {
+    padding: 20px;
+}
+
+/*BOUTON*/
+.container {    /*pour positioner bouton*/
+    position: relative;
+    max-width: 550px;
+}
+.container img {    /* Make the image responsive */
+    width: 100%;
+    height: auto;
+}
+.container .btn {   /*style + centrer bouton en fonction container*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #f0f0f0;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 1px;
+  }
+  .container .btn:hover {
+    background-color: rgba(255, 255, 255, 0.100);
+  }
