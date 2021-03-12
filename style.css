@@ -95,7 +95,7 @@
 }
 .description {
     padding: 20px;
-    display: inline;
+    display: flex;
 }
 
 /*BOUTON*/
