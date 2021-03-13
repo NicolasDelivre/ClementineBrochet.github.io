@@ -89,19 +89,21 @@
     overflow: auto;
     display: block;
 }
-.portrait .description {
+.portrait {
     float: left;
     width: 37vw;
+
+.description {
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    grid-gap: 10px
+    float: right;
+    display: inline;
 }
 
 /*BOUTON*/
 .container {    /*pour positioner bouton*/
     position: relative;
+    top: 30px;
+    right: 50px;
     max-width: 550px;
 }
 .container img {    /* Make the image responsive */
