@@ -110,7 +110,7 @@
     width: 100%;
     height: auto;
 }
-.container .btn {   /*style + centrer bouton en fonction container*/
+.btn {   /*style + centrer bouton en fonction container*/
     position: absolute;
     left: 50%;
     top: 50%;
