@@ -27,14 +27,14 @@
     overflow: hidden;
 
     /*centered*/
-    /*float: none;
+    float: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
 }
 .navbar a { /* "Home" & "Contact" */
     font-size: 20px;
-    float: center;
+    float: left;
     text-decoration: none;
     text-align: center;
     padding: 15px;   /*espacement entre les elements*/
