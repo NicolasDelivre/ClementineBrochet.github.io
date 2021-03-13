@@ -89,11 +89,14 @@
     overflow: auto;
     display: block;
 }
-.portrait, description {
+.portrait .description {
     float: left;
     width: 37vw;
     padding: 20px;
-    display: flex-inline;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px
 }
 
 /*BOUTON*/
