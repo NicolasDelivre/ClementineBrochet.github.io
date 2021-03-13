@@ -34,7 +34,7 @@
 }
 .navbar a { /* "Home" & "Contact" */
     font-size: 20px;
-    float: left;
+    float: center;
     text-decoration: none;
     text-align: center;
     padding: 15px;   /*espacement entre les elements*/
@@ -110,7 +110,7 @@
     width: 100%;
     height: auto;
 }
-.btn {   /*style + centrer bouton en fonction container*/
+.container .btn {   /*style + centrer bouton en fonction container*/
     position: absolute;
     left: 50%;
     top: 50%;
